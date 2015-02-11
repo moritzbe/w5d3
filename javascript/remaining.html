@@ -1,0 +1,30 @@
+    <!-- TinderAjax! -->
+    <button id="getAddress">Get My Address</button>
+    <script>
+      var button = $.query("#getAddress");
+      $.on(button, "click", function(event) {
+        $.ajax(data, function() {
+          // do something with address
+        })
+      });
+    </script>
+
+    <!-- TinderStorage! -->
+    <button id="storeData">Store Data</button>
+    <script>
+      var button = $.query("#storeData");
+      $.on(button, "click", function(event) {
+        // save geolocation and address in local storage
+        $.store(data);
+      });
+    </script>
+
+    <!-- TinderNotification! -->
+    <button id="notifyData">Notify Data</button>
+    <script>
+      var button = $.query("#notifyData");
+      $.on(button, "click", function(event) {
+        // display data in a notification
+        $.notify(data);
+      });
+    </script>
